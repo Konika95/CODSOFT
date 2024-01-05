@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My favourite movies of 2023</h1>
+    </header>
+
+    <section id="featured-movies">
+        <h2>Featured movies</h2>
+        <div class="movie-card" onclick="showmovieDetails('12th fail','biographical drama', 'Vikrant Massey','Medha Shankar')">
+            <img src="12th fail.jpeg" alt="12th fail">
+            <h3>12th fail</h3>
+        </div>
+        <div class="movie-card" onclick="showmovieDetails('Sita raman', 'Action , Romance', 'Dulquer Salmaan', 'Mrunal Thakur',)">
+            <img src="sita raman.jpeg" alt="Sita raman">
+            <h3>Sita raman</h3>
+        </div>  
+    </section>
+
+    <section id="movie-details" class="hidden">
+        <button onclick="hidemovieDetails()">Back to Featured movies</button>
+        <div id="movie-info">
+            <!-- movie details will be dynamically populated here using JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My featured-movies. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
